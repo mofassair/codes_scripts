@@ -10,3 +10,11 @@ dp_xls_path = os.path.normpath(raw_path)  # Normalize path separators
 _source = "loc_xls"  # loc_xls, db_os, db_influx
 print(f"printing source: {config['dp_source']['loc_xls']['path']}")
 print(f"printing source: {config['dp_source'][_source]['path']}")
+
+
+## n8n
+restart container (docker compose)
+- docker-compose down && docker-compose up -d
+
+restart OpenLiteSpeed
+- systemctl restart lsws
